@@ -1,0 +1,87 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Super</title>
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+    <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{css/StyleNuevoVotante.css}">
+</head>
+
+<body class="showcase">
+    <header>
+        <h1 id="titulo">Registro de Votantes</h1>
+    </header>
+
+    <div>
+
+
+        <form id="formulario" name = "formulario" th:action="@{/saveVotantes}" method="post">
+            <div class="mb-3" id="campoRegistro">
+                <label for="identificacion" class="form-label">Identificación</label><br>
+                <input type="Integer" class="form-control" name ="identificacion" id="identificacion" aria-describedby="identificacionHelp" required>
+                <div id="identificacionHelp" class="form-text">Digite su numero de Identificación.</div>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="nombres" class="form-label">Nombres</label><br>
+                <input type="text" class="form-control" name ="nombres" id="nombres" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="apellidos" class="form-label">Apellidos</label><br>
+                <input type="text" class="form-control" name ="apellidos" id="apellidos" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="sexo" class="form-label">Sexo</label><br>
+                <input type="text" class="form-control" name ="sexo" id="sexo" aria-describedby="sexoHelp" required>
+                <div id="sexoHelp" class="form-text">Digite Masculino o femenino.</div>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label><br>
+                <input type="date" class="form-control" name ="fechaNacimiento" id="fechaNacimiento" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="fechaExpedi" class="form-label">Fecha de Expedicion del documento</label><br>
+                <input type="date" class="form-control" name ="fechaExpedi" id="fechaExpedi" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="lugarNacimiento" class="form-label">Ciudad de Nacimiento</label><br>
+                <input type="text" class="form-control" name ="lugarNacimiento" id="lugarNacimiento" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="lugarResidencia" class="form-label">Ciudad de residencia</label><br>
+                <input type="text" class="form-control" name ="lugarResidencia" id="lugarResidencia" required>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="telefono" class="form-label">Teléfono</label><br>
+                <input type="text" class="form-control" name ="telefono" id="telefono" aria-describedby="telefonoHelp" required>
+                <div id="telefonoHelp" class="form-text">Digite su numero de Celular.</div>
+            </div>
+            <div class="mb-3" id="campoRegistro">
+                <label for="correo" class="form-label">Dirección de Email</label><br>
+                <input type="email" class="form-control" name ="correo" id="correo" aria-describedby="correoHelp">
+                <div id="correoHelp" class="form-text">Solo direcciones de Email validas.</div>
+              </div><br>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+    </div>
+
+
+    <a th:href="@{/index}"><img src="css/Imagenes/home.png" width="50" height="50">Volver</a>
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="mailto:daibarra@gmail.com">Escríbeme aquí</a>
+        </section>
+        <p>Ciclo 3 G62 2022</p>
+    </footer>
+</body>
+
+</html>

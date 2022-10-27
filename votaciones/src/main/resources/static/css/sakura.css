@@ -1,0 +1,53 @@
+html {
+    font-family: 'Lobster Two', cursive;
+}
+
+body {
+    margin: 4;
+    background-color: #ebaed8;
+}
+
+header {
+    background-color: #ebaed8;
+    color: rgb(240, 231, 241);
+    padding: 8rem 8rem;
+}
+
+#titulo {
+    font-size: 4rem;
+    text-align: center;
+    color: indigo;
+}
+
+div p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+div ul {
+    font-size: 1.5rem;
+    text-align: center;
+    color: indigo;
+}
+
+section article {
+    background-color: #e6e0e0;
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    cursor: hand;
+}
+
+section article h2, section article p {
+    margin: 7rem;
+}
+
+footer {
+    background-color: #6b1859;
+    padding: 3rem;
+    color: rgb(252, 246, 246);
+}
+
+footer p {
+    margin: 0;
+    float: center;
+}

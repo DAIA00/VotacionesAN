@@ -1,0 +1,65 @@
+
+body{
+    
+    max-width: 100%;
+    padding-left: 2%
+}
+
+
+#top{
+    
+     display: flex;
+    
+    
+}
+
+#imagenOnePiece{
+    
+    
+    
+   
+    
+}
+
+#slogan{
+    
+    color: black;
+    padding-left: 20%;
+    font-size: 30px;
+}
+
+#centro{
+    
+    
+    display: flex;
+    
+}
+
+#descripcion{
+    
+    padding-top: 15%;
+    font-size: 30px;
+}
+
+#inferior{
+    
+    text-align: center;
+    display: flex;
+    padding-left: 7%;
+    
+    
+}
+
+#textos{
+    
+    display:flex;
+    
+}
+
+#home{
+    
+    padding-left: 50%;
+    max-width: 20px;
+    
+    
+}

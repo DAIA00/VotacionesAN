@@ -1,0 +1,122 @@
+
+<html
+   xmlns="http://www.w3.org/1999/xhtml" 
+   xmlns:th="http://www.thymeleaf.org"
+   xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+        <title>AppVotaciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="Sistema de votaciones electorales año 2022">
+        <link rel="stylesheet" th:href="@{bootstrap-5.2.1-dist/css/bootstrap.css}">
+        <link rel="stylesheet" th:href="@{css/Sprint3.css}">
+        <script src="js/sprint3.js"></script>
+        <script src="http://cdn.jsdelivr.net/npm/chart.js@latest/dist/chart.min.js"></script>
+        
+        
+    </head>
+
+    <!-- background de la pantalla principal color azul "#4821FC" -->
+
+    <body class='bodyClass'>
+
+        <!-- Tabla parte superior de la pagina donde se encuentran los vinculos a cada pagina wed -->
+        <div id="encabezado" class='aclass'>
+
+
+            <div id="logoprincipal">Votaciones Anime</div>
+            <div id="menu"><a th:href="@{DMC}">Ditroit Metal City</a></div>
+            <div id="menu"><a th:href="@{PDBS}">Dragon Ball Super</a></div>
+            <div id="menu"><a th:href="@{OnePiece}">One Piece</a></div>
+            <div id="menu"><a th:href="@{pokemon}">Pokemon</a></div>
+            <div id="menu"><a th:href="@{beaters}">Beastars</a></div>
+            <div id="menu"><a th:href="@{SAKURA}" >Sakura</a></div>
+            <div id="menu"><a th:href="@{nuevoVotante}">Registro</a></div>
+
+        </div> 
+
+
+        <hr color:#E5E8E8;>
+
+        <!-- Tabla parte central de la pagina donde se encuentra el texto del paetido y la imagen principal de los partidos  -->
+        <div id="central1">
+        <div id="central">
+            <p>Ya están
+                aquí los nominados y las votaciones de los Anime 2023 Recuerda que puedes votar solo una vez
+                y por un solo anime, desde hoy y hasta el 30 de septiembre, así que no pierdas la
+                oportunidad, tu opinión cuenta a la hora de premiar a tus series favoritas; además, !pidele
+                a todos que voten contigo!. </p>
+        </div> 
+
+        <div id="imagenCentral">
+            
+        <img src='css/Imagenes/animes.png'>
+        
+        </div>
+        </div>
+
+
+
+        <div id="instrucciones">    
+            <!-- Tabla parte inferior de la pagina donde se encuentran las imagenes de cada partido.   -->
+            <p> INTRUCCIONES : Para
+                Votar por tu anime Favorito Solo debes darle clic a una de las imagenes siguientes y automaticamente tu
+                voto sera Enviado, si quieres tener mas informacion de cada uno de los animes te invitamos a darle clic
+                en el nombre de tu anime en la parte superior derecha de la pagina.
+            </p>
+
+        </div>
+
+
+        <div id="footer">    
+
+            <div id="menu"><img src='css/Imagenes/8185b9f1a7c9745d7aaf61060a179c3903185331_00.gif' style="max-width: 100px"><br><br><button type="button" class="btn btn-warning" onclick="javascript: votar(0);">votar</button></div>
+
+            <div id="menu"><img src='css/imagenes/DBSgv.jpg' style="max-width: 100px"><br><button type="button" class="btn btn-warning"onclick="javascript: votar(1);">votar</button></div>
+
+            <div id="menu"><img src='css/imagenes/onePiece.png' style="max-width: 100px"><br><br><button type="button" class="btn btn-warning"onclick="javascript: votar(2);">votar</button></div>
+
+            <div id="menu"><img src='css/imagenes/pokemon.png' style="max-width: 100px"><br><br><button type="button" class="btn btn-warning"onclick="javascript: votar(3);">votar</button></div>
+
+            <div id="menu"><img src='css/imagenes/beastars.png' style="max-width: 100px"><br><br><button type="button" class="btn btn-warning"onclick="javascript: votar(4);">votar</button></div>
+
+            <div id="menu"><img src='css/Imagenes/botonSakura.jpeg' style="max-width: 100px"><br><br><button type="button" class="btn btn-warning"onclick="javascript: votar(5);">votar</button></div>
+
+        </div> 
+
+       
+
+        <hr color:#E5E8E8;>
+        
+        <div id= "botones">
+        
+         <button type="button" class="btn btn-secondary" onclick="javascript:estadistica();">Total Votos</button>
+
+         </div>
+
+         
+
+
+         </div>
+
+    
+
+        </div> 
+    
+
+    <div id="votaciones" >
+    <div id ="conEst">
+
+    </div><br><br>
+
+    <div><canvas id="grafica" width="500px"></canvas></div>
+
+    </div>
+
+         
+    </body>
+
+
+
+</html>

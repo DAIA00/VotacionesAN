@@ -1,0 +1,104 @@
+body{
+  background-color:  #34495E;
+  width: 95%;
+  padding-left:2%;
+}
+a {
+  color: #E5E8E8;
+  font-family: verdana;
+  text-decoration: none;
+}
+p {
+   color: #E5E8E8;
+   font-family: verdana;
+}
+
+#encabezado{
+    
+    
+    width: 100%;
+    display: flex;
+    color:#E5E8E8;
+    
+    
+}
+
+#logoprincipal{
+    
+    font-size:30px;
+    padding-right:100px;
+    padding-top: 20px;
+}
+
+#menu{
+    
+    padding-left:60px;
+    font-size: 20px;
+    padding-top: 30px;
+    
+}
+
+#central1{
+    
+    display: flex;
+     
+}
+
+
+#central{
+    
+    width: 100%;
+    font-family: verdana;
+    color:  blue;
+    font-size: 25px;
+    padding-top: 6%;
+    text-align: justify;
+    
+    
+}
+
+
+#instrucciones{
+    
+    width: 100%;
+    font-family: verdana;
+    font-size: 20px;
+    text-align: justify;
+    
+    
+}
+#footer{
+    
+  width: 100%;
+  text-align: center;
+  display: inline-flex;
+  padding-left:15%;
+    
+    
+}
+
+#botones{
+
+  text-align: center;
+}
+
+#conEst{
+
+ 
+  width: 100%;
+  
+  
+
+
+}
+
+#votaciones{
+
+display: flex;
+text-align: center;
+
+
+}
+
+
+
